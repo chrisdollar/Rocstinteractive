@@ -1187,7 +1187,8 @@ footer .credits {
 }
 
 #back-to-top:hover {
-	background-color:#DE5E60;
+	/*background-color:#DE5E60;*/
+	background-color: #F99D29;
 }
 
 #back-to-top i {
