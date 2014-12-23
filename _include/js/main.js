@@ -1,13 +1,13 @@
 jQuery(function($){
 
-var BRUSHED = window.BRUSHED || {};
+var ROCST = window.ROCST || {};
 
 /* ==================================================
    Mobile Navigation
 ================================================== */
 var mobileMenuClone = $('#menu').clone().attr('id', 'navigation-mobile');
 
-BRUSHED.mobileNav = function(){
+ROCST.mobileNav = function(){
 	var windowWidth = $(window).width();
 	
 	if( windowWidth <= 979 ) {
@@ -23,7 +23,7 @@ BRUSHED.mobileNav = function(){
 	}
 }
 
-BRUSHED.listenerMenu = function(){
+ROCST.listenerMenu = function(){
 	$('#mobile-nav').on('click', function(e){
 		$(this).toggleClass('open');
 		
@@ -46,7 +46,7 @@ BRUSHED.listenerMenu = function(){
    Slider Options
 ================================================== */
 
-BRUSHED.slider = function(){
+ROCST.slider = function(){
 	$.supersized({
 		// Functionality
 		slideshow               :   1,			// Slideshow on/off
@@ -77,10 +77,10 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content"><span>logo</span><br/>We rock your business</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image02.jpg', title : '<div class="slide-content"><span>logo</span><br/>We rock your business</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image03.jpg', title : '<div class="slide-content"><span>logo</span><br/>We rock your business</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image04.jpg', title : '<div class="slide-content"><span>logo</span><br/>We rock your business</div>', thumb : '', url : ''}  
+											{image : '_include/img/slider-images/slide_1_background.jpg', title : '<div class="slide-content"><span>logo</span></div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/image02.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/image03.jpg', title : '<div class="slide-content"><span>logo</span></div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/image04.jpg', title : '<div class="slide-content"><span>logo</span></div>', thumb : '', url : ''}  
 									],
 									
 		// Theme Options			   
@@ -96,7 +96,7 @@ BRUSHED.slider = function(){
    Navigation Fix
 ================================================== */
 
-BRUSHED.nav = function(){
+ROCST.nav = function(){
 	$('.sticky-nav').waypoint('sticky');
 }
 
@@ -105,7 +105,7 @@ BRUSHED.nav = function(){
    Filter Works
 ================================================== */
 
-BRUSHED.filter = function (){
+ROCST.filter = function (){
 	if($('#projects').length > 0){		
 		var $container = $('#projects');
 		
@@ -158,7 +158,7 @@ BRUSHED.filter = function (){
    FancyBox
 ================================================== */
 
-BRUSHED.fancyBox = function(){
+ROCST.fancyBox = function(){
 	if($('.fancybox').length > 0 || $('.fancybox-media').length > 0 || $('.fancybox-various').length > 0){
 		
 		$(".fancybox").fancybox({				
@@ -187,7 +187,7 @@ BRUSHED.fancyBox = function(){
    Contact Form
 ================================================== */
 
-BRUSHED.contactForm = function(){
+ROCST.contactForm = function(){
 	$("#contact-submit").on('click',function() {
 		$contact_form = $('#contact-form');
 		
@@ -217,7 +217,7 @@ BRUSHED.contactForm = function(){
    Twitter Feed
 ================================================== */
 
-BRUSHED.tweetFeed = function(){
+ROCST.tweetFeed = function(){
 	
 	var valueTop = -64; // Margin Top Value
 	
@@ -250,7 +250,7 @@ BRUSHED.tweetFeed = function(){
    Menu Highlight
 ================================================== */
 
-BRUSHED.menu = function(){
+ROCST.menu = function(){
 	$('#menu-nav, #menu-nav-mobile').onePageNav({
 		currentClass: 'current',
     	changeHash: false,
@@ -266,7 +266,7 @@ BRUSHED.menu = function(){
    Next Section
 ================================================== */
 
-BRUSHED.goSection = function(){
+ROCST.goSection = function(){
 	$('#nextsection').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
 		
@@ -279,7 +279,7 @@ BRUSHED.goSection = function(){
    GoUp
 ================================================== */
 
-BRUSHED.goUp = function(){
+ROCST.goUp = function(){
 	$('#goUp').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
 		
@@ -293,7 +293,7 @@ BRUSHED.goUp = function(){
 	Scroll to Top
 ================================================== */
 
-BRUSHED.scrollToTop = function(){
+ROCST.scrollToTop = function(){
 	var windowWidth = $(window).width(),
 		didScroll = false;
 
@@ -325,7 +325,7 @@ BRUSHED.scrollToTop = function(){
    Thumbs / Social Effects
 ================================================== */
 
-BRUSHED.utils = function(){
+ROCST.utils = function(){
 	
 	$('.item-thumbs').bind('touchstart', function(){
 		$(".active").removeClass("active");
@@ -348,7 +348,7 @@ BRUSHED.utils = function(){
    Accordion
 ================================================== */
 
-BRUSHED.accordion = function(){
+ROCST.accordion = function(){
 	var accordion_trigger = $('.accordion-heading.accordionize');
 	
 	accordion_trigger.delegate('.accordion-toggle','click', function(event){
@@ -370,7 +370,7 @@ BRUSHED.accordion = function(){
    Toggle
 ================================================== */
 
-BRUSHED.toggle = function(){
+ROCST.toggle = function(){
 	var accordion_trigger_toggle = $('.accordion-heading.togglize');
 	
 	accordion_trigger_toggle.delegate('.accordion-toggle','click', function(event){
@@ -390,7 +390,7 @@ BRUSHED.toggle = function(){
    Tooltip
 ================================================== */
 
-BRUSHED.toolTip = function(){ 
+ROCST.toolTip = function(){ 
     $('a[data-toggle=tooltip]').tooltip();
 }
 
@@ -399,7 +399,7 @@ BRUSHED.toolTip = function(){
 	Init
 ================================================== */
 
-BRUSHED.slider();
+ROCST.slider();
 
 $(document).ready(function(){
 	Modernizr.load([
@@ -430,25 +430,25 @@ $(document).ready(function(){
 		}
 	});
 	
-	BRUSHED.nav();
-	BRUSHED.mobileNav();
-	BRUSHED.listenerMenu();
-	BRUSHED.menu();
-	BRUSHED.goSection();
-	BRUSHED.goUp();
-	BRUSHED.filter();
-	BRUSHED.fancyBox();
-	BRUSHED.contactForm();
-	BRUSHED.tweetFeed();
-	BRUSHED.scrollToTop();
-	BRUSHED.utils();
-	BRUSHED.accordion();
-	BRUSHED.toggle();
-	BRUSHED.toolTip();
+	ROCST.nav();
+	ROCST.mobileNav();
+	ROCST.listenerMenu();
+	ROCST.menu();
+	ROCST.goSection();
+	ROCST.goUp();
+	ROCST.filter();
+	ROCST.fancyBox();
+	ROCST.contactForm();
+	ROCST.tweetFeed();
+	ROCST.scrollToTop();
+	ROCST.utils();
+	ROCST.accordion();
+	ROCST.toggle();
+	ROCST.toolTip();
 });
 
 $(window).resize(function(){
-	BRUSHED.mobileNav();
+	ROCST.mobileNav();
 });
 
 });
