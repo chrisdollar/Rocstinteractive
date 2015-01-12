@@ -18,7 +18,8 @@ body{
 	background:#2F3238;
 	color:#7F8289;
 	font-weight:300;
-	font-size:16px;
+	/*font-size:16px;*/
+	font-size: 1.2em;
 	font-family: 'open_sanslight';
 	/*font-family: 'Titillium Web', sans-serif;*/
 	line-height:28px;
@@ -1010,6 +1011,58 @@ nav#menu #menu-nav li a:hover {
 	}
 
 
+<<<<<<< HEAD
+=======
+	/*SERVICES*/
+	.service-column{
+		position: relative; 
+	}
+
+	.service-column h3 {
+		font-size: 20px;
+	}
+		.service-column h3 .show-btn{
+
+			float: right;
+			margin-top: 5px; 
+			width: 20px; height: 20px;
+			border-radius: 50%;
+			background: #F99D29;
+		}
+		.service-column h3 .show-btn .text{
+		    font-size: 16px;
+		    margin-left: 2px;
+		    position: relative;
+		    top: -6px;
+		    cursor : pointer;
+		}
+
+	.service-column .explicit{
+		opacity: 0;
+		display: none;
+		font-size: 14px;
+		background: rgba(0,0,0,.2);
+		height: 0;
+		max-height: 120px;
+		overflow: auto;
+		padding: 10px 0px 10px 10px;
+		-webkit-border-radius : 3px;
+		border-radius: 3px;
+	}
+
+	.service-column ul, .service-column ol{
+		margin-left: 0px;
+	
+	}
+	.service-column ul{
+		padding-bottom: 20px;
+		border-bottom: 1px solid #2f3238;
+	}
+
+
+
+
+>>>>>>> servicesStep
 
 
 

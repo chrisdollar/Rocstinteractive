@@ -1,0 +1,22 @@
+{
+  "name": "Rocstinteractive",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisdollar/Rocstinteractive.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/chrisdollar/Rocstinteractive/issues"
+  },
+  "homepage": "https://github.com/chrisdollar/Rocstinteractive",
+  "devDependencies": {
+    "gulp": "~3.8.10"
+  }
+}
