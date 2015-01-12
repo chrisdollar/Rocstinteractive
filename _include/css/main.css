@@ -1010,9 +1010,11 @@ nav#menu #menu-nav li a:hover {
 		text-align: center;
 	}
 
+	/*AGENCE*/
+	div.all-reasons{
+		margin-top: 40px;
+	}
 
-<<<<<<< HEAD
-=======
 	/*SERVICES*/
 	.service-column{
 		position: relative; 
@@ -1060,9 +1062,6 @@ nav#menu #menu-nav li a:hover {
 	}
 
 
-
-
->>>>>>> servicesStep
 
 
 
