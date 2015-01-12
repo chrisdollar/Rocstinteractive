@@ -18,7 +18,8 @@ body{
 	background:#2F3238;
 	color:#7F8289;
 	font-weight:300;
-	font-size:16px;
+	/*font-size:16px;*/
+	font-size: 1.2em;
 	font-family: 'open_sanslight';
 	/*font-family: 'Titillium Web', sans-serif;*/
 	line-height:28px;
@@ -916,6 +917,23 @@ nav#menu #menu-nav li a:hover {
 /* ==================================================
    Great ROCST section 
 ================================================== */
+
+.about-home-section{
+	background: url('../img/backgrounds/who-we-are.jpg');
+}
+	.about-title{
+		color: #fff;
+		text-shadow : 1px 1px 2px rgba(0,0,0,.5);
+	}
+	.about-title-description{ 
+		color: #26292e;
+	}
+
+	.about-home-intro-text{
+		color :#3c3f45;
+
+	}
+
 .for-next-step{
 	display: block;
 	margin: 0 auto;
@@ -931,9 +949,10 @@ nav#menu #menu-nav li a:hover {
 }
 
 
-#services h3.profile-name{
+#services h3.profile-name, #team h3.profile-name{
 	font-weight: 100;
 	font-family: 'bree_serifregular';
+
 }
 
 
@@ -962,6 +981,92 @@ nav#menu #menu-nav li a:hover {
     color: black;
 }
 
+.illust{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.intro-fix{
+	padding: 0px;
+	position: fixed;
+	width: 100%;
+	top: 60px;
+}
+
+.introBloc{
+	width: 100%;
+	height: 400px;
+	padding-top: 8em;
+}
+
+	.intro-fix-about{
+		background : url("../img/backgrounds/about.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+		background-size: cover;
+	}
+
+	.intro-fix h1{
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+
+	/*SERVICES*/
+	.service-column{
+		position: relative; 
+	}
+
+	.service-column h3 {
+		font-size: 20px;
+	}
+		.service-column h3 .show-btn{
+
+			float: right;
+			margin-top: 5px; 
+			width: 20px; height: 20px;
+			border-radius: 50%;
+			background: #F99D29;
+		}
+		.service-column h3 .show-btn .text{
+		    font-size: 16px;
+		    margin-left: 2px;
+		    position: relative;
+		    top: -6px;
+		    cursor : pointer;
+		}
+
+	.service-column .explicit{
+		opacity: 0;
+		display: none;
+		font-size: 14px;
+		background: rgba(0,0,0,.2);
+		height: 0;
+		max-height: 120px;
+		overflow: auto;
+		padding: 10px 0px 10px 10px;
+		-webkit-border-radius : 3px;
+		border-radius: 3px;
+	}
+
+	.service-column ul, .service-column ol{
+		margin-left: 0px;
+	
+	}
+	.service-column ul{
+		padding-bottom: 20px;
+		border-bottom: 1px solid #2f3238;
+	}
+
+
+
+
+
+
+
+
+.with-margin{
+	margin-top: 400px;
+}
 /* ==================================================
    Contact Section
 ================================================== */
@@ -1174,7 +1279,7 @@ nav#menu #menu-nav li a:hover {
 #social ul li:hover a,
 #social ul li.active a {
 	/*background-color: #DE5E60;	*/
-	background-color: #F99D29;
+	background-color: #F99D29;e
 	
 	-webkit-transform: rotateY(0deg);
 	   -moz-transform: rotateY(0deg);

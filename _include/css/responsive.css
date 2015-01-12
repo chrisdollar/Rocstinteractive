@@ -200,6 +200,13 @@
 	.info-text {
 		padding-right: 0;	
 	}
+
+	.without-padding{
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-top: -120px;
+		margin-bottom: -120px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -369,6 +376,14 @@
 	.info-text {
 		padding-right: 0;	
 	}
+
+	.without-padding{
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-top: -120px;
+		margin-bottom: -120px;
+	}
+
 }
 
 @media (max-width: 320px) {
@@ -383,6 +398,10 @@
 	#twitter-feed {
 		padding-top: 90px;
 		padding-bottom: 120px;	
+	}
+
+	.intro-fix{
+		padding-left: 0px;
 	}
 }
 
