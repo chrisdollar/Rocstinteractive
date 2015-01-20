@@ -403,6 +403,16 @@
 	.intro-fix{
 		padding-left: 0px;
 	}
+
+	/**/
+	img.we-are-rocst-big{
+		display: none;
+	}
+	.about-home-intro-text{
+		padding: 0 0;
+	}
+
+	/**/
 }
 
 

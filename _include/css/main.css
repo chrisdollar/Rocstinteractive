@@ -519,7 +519,7 @@ header #logo {
 	color: #FFFFFF;
 	float: left;
 	padding: 3.5px 0;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 header #logo a {
@@ -676,6 +676,7 @@ nav#menu #menu-nav li a:hover {
 	font-size: 24px;
 	font-weight: 200;
 	margin: 0;
+	color: #999999; /*add by Rocst*/
 }
 
 /* ==================================================
@@ -918,8 +919,17 @@ nav#menu #menu-nav li a:hover {
    Great ROCST section 
 ================================================== */
 
+.text-align-center{
+	text-align: center;
+}
+
 .about-home-section{
-	background: url('../img/backgrounds/who-we-are.jpg');
+	background: url('../img/backgrounds/who-we-are.jpg') center center;
+	background-size: cover;
+}
+
+.title-page-about{
+	margin-bottom: 50px;
 }
 	.about-title{
 		color: #fff;
@@ -929,8 +939,15 @@ nav#menu #menu-nav li a:hover {
 		color: #26292e;
 	}
 
+	img.we-are-rocst-big{
+		width: 100%;
+		max-width: 984px;
+	}
+
 	.about-home-intro-text{
-		color :#3c3f45;
+		color :#ffffff;
+		text-align: center;
+		padding: 0 25%;
 
 	}
 
@@ -1005,6 +1022,11 @@ nav#menu #menu-nav li a:hover {
 		background-size: cover;
 	}
 
+	.intro-fix-service{
+		background : url("../img/backgrounds/service.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+		background-size: cover;
+	}
+
 	.intro-fix h1{
 		text-transform: uppercase;
 		text-align: center;
@@ -1012,6 +1034,9 @@ nav#menu #menu-nav li a:hover {
 
 
 	/*SERVICES*/
+	.z-index-999{
+		z-index : 999;
+	}
 	.service-column{
 		position: relative; 
 	}
@@ -1020,10 +1045,14 @@ nav#menu #menu-nav li a:hover {
 		font-size: 20px;
 	}
 		.service-column h3 .show-btn{
-
+			position:relative;
 			float: right;
 			margin-top: 5px; 
 			width: 20px; height: 20px;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-o-border-radius: 50%;
+			-ms-border-radius: 50%;
 			border-radius: 50%;
 			background: #F99D29;
 		}
@@ -1056,6 +1085,122 @@ nav#menu #menu-nav li a:hover {
 		padding-bottom: 20px;
 		border-bottom: 1px solid #2f3238;
 	}
+
+	div#process  .row-c-align{
+		margin: 0 auto;
+		max-width: 1144px;
+		width: 100%;
+		
+	}
+
+	.row-c-align .column{
+		position: relative;
+		float: left; 
+		width: 35%;	
+		padding: 0 70px 0 70px;	
+
+	}
+
+	.text-align-right{
+		text-align: right;
+		background: url('../img/sep-column.svg') no-repeat;
+		background-position: right center;
+	}
+
+	.text-align-left{
+		text-align: left;
+		margin-top: 150px;
+	}
+
+		.text-align-right .process div.number{
+			position: absolute;
+			right: -22px;
+			background: #F99D29;
+			width : 50px;
+			height: 50px;
+			margin-top: -10px;
+			-webkit-border-radius: 100px;
+			        border-radius: 100px;
+
+
+		}
+
+		.text-align-left .process div.number{
+			position: absolute;
+			left: -29px;
+			background: #F99D29;
+			width: 50px;
+			height: 50px;
+			margin-top: -10px;
+			-webkit-border-radius: 100px;
+			        border-radius: 100px;
+		}
+
+		#discover-number{
+			background: url('../img/discover.svg') #F99D29;
+		}
+
+		#define-number {
+			background: url('../img/define.svg') #F99D29;
+		}
+
+		#design-number{
+			background: url('../img/design.svg') #F99D29;
+		}
+
+		#development-number{
+			background: url('../img/development.svg') #F99D29;
+		}
+
+		.process{
+			margin-bottom: 100px;
+		}
+
+
+		.process h2{
+			font-size: 20px;
+			color: #F99D29;
+		}
+
+		.process p{
+			
+		}
+
+		div#process-deployment{
+			position: relative;
+			text-align: center;
+			bottom: -110px;
+			right: -266px;
+			margin-bottom: 0px;
+		}
+			div.process-deployment div#process-number{
+				position: inherit;
+				margin-left: 128px;
+				margin-bottom: 10px;
+				width: 100px;
+				height: 100px;
+				/*bottom: -10px;*/
+				/*right: -46px;*/
+				background: url('../img/deployment.svg') #F99D29 center center;
+			}
+
+
+
+
+		.process-deployment-text{
+			/*
+			position: relative;
+			margin-top: 350px;
+			right: -231px;
+			top: 110px;
+			*/
+		}
+
+		.process-deployment-text h2{
+			font-size: 20px;
+			color: #F99D29;
+			margin-bottom: 5px;
+		}
 
 
 
