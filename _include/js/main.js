@@ -399,7 +399,7 @@ ROCST.toolTip = function(){
 	Init
 ================================================== */
 
-//ROCST.slider();
+ROCST.slider();
 
 $(document).ready(function(){
 	Modernizr.load([
