@@ -46,6 +46,15 @@
 	}
 
 
+	/****/
+	img.we-are-rocst-mobile{
+		display: none;
+	}
+	.about-home-intro-text{
+		padding: 0 10%;
+	}
+	/***/
+
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -217,23 +226,15 @@
 		margin-bottom: -120px;
 	}
 
-	.page-illust{
-		background-position: -200px 0px;
-		height: 320px;
-	    
-		}
-
-
-	@media (max-width: 600px) {
-		.page-illust{
-			background-position: -270px 0px;
-			height: 280px;
-	    
-		}
-
-
-
+	/****/
+	img.we-are-rocst-mobile{
+		display: none;
 	}
+	.about-home-intro-text{
+		padding: 0 10%;
+	}
+	/***/
+
 
 
 }
@@ -419,20 +420,17 @@
 		margin-bottom: -120px;
 	}
 
-
-	.page-illust{
-		background-position: -400px 0px;
-		height: 280px;
-	    
+	/****/
+	img.we-are-rocst-big{
+		display: none;
 	}
-
-	@media (min-width: 321px) and (max-width:394px) {
-
-		.intro-fix h1{
-			margin-top: -120px;
-		}
-
+	img.we-are-rocst-mobile{
+		display: block;
 	}
+	.about-home-intro-text{
+		padding: 0 2%;
+	}
+	/***/
 
 
 }
@@ -467,8 +465,17 @@
 	}
 
 	/**/
+	.title-page .title {
+	    font-size: 35px;
+	    line-height: 40px;
+	    margin: 0 0 20px;
+	}
+
 	img.we-are-rocst-big{
 		display: none;
+	}
+	img.we-are-rocst-mobile{
+
 	}
 	.about-home-intro-text{
 		padding: 0 0;

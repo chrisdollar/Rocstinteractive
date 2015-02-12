@@ -4,22 +4,36 @@ $(document).ready(function(){
 
     var btns = document.getElementsByClassName('show-btn');
 	var tl = new TimelineLite();
-    tl.staggerFrom(el, 0.4, {
 
+    tl.staggerFrom(el, 0.2, {
       opacity: 0, 
       top :"+=25px"
-    }, 0.5).delay(1);
+    }, 0.5);
 
-    tl.staggerFrom(btns, 0.4, {
+    tl.staggerFrom(btns, 0.3, {
       opacity: 0, 
       left :"-=20px",
       ease :  Bounce.easeOut
     }, 0.2);
 
+    tl.stop();
 
-    tl.resume();
-    tl.play();
+    var processTimeLine = new TimelineLite();
+    processTimeLine.from($('#process-steps'), 0.2, {
+        opacity : 0,
+        top : '-=100px'
 
+    });
+    processTimeLine.stop();
+    
+
+    var tHappy = new TimelineLite();
+    tHappy.to($('#team-happy'), 0.3, {
+        opacity : 1,
+        width   : '30px',
+        height  : '32px'
+    });
+    tHappy.stop();
    
 
     $('.show-btn').click(function(e){
@@ -54,7 +68,47 @@ $(document).ready(function(){
         }
     	
 
-    })
+    });
+
+
+    var waypoints = $('#services').waypoint(
+        function(direction){
+            if(direction == 'down'){
+                tl.play();
+            }else if(direction == 'up'){
+                tl.resume();
+            }
+            
+        }
+        , { offset : '20%'}); 
+    
+
+    $('#process').waypoint(
+        function(direction){
+            if(direction == 'down'){
+                processTimeLine.play();
+            }else if(direction == 'up'){
+                processTimeLine.reverse();
+            }
+            
+        }
+        , { offset : '20%'}
+    ); 
+
+    $('#process-steps').waypoint({
+        handler : function(direction){
+            console.log(direction);
+            if(direction == 'down'){
+                console.log('tHappy');
+                tHappy.play()
+            }else if(direction == 'up'){
+                tHappy.reverse();
+            }
+        }, 
+        offset : '50%'
+    });
+
+
 
 
 });
