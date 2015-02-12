@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
 	var el = document.getElementsByClassName('service-column');
+
     var btns = document.getElementsByClassName('show-btn');
 	var tl = new TimelineLite();
+
     tl.staggerFrom(el, 0.2, {
       opacity: 0, 
       top :"+=25px"
@@ -15,7 +17,6 @@ $(document).ready(function(){
     }, 0.2);
 
     tl.stop();
-    
 
     var processTimeLine = new TimelineLite();
     processTimeLine.from($('#process-steps'), 0.2, {

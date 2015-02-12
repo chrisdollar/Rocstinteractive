@@ -919,6 +919,7 @@ nav#menu #menu-nav li a:hover {
    Great ROCST section 
 ================================================== */
 
+
 .text-align-center{
 	text-align: center;
 }
@@ -954,12 +955,13 @@ nav#menu #menu-nav li a:hover {
 		margin:  0 0 35px; 
 	}
 	
-	.about-title-description{ 
+	.about-title-description{
 		color: #ffffff;
 	}
 
 	img.we-are-rocst-big, 
 	img.we-are-rocst-mobile{
+
 		width: 100%;
 		max-width: 984px;
 	}
@@ -973,6 +975,7 @@ nav#menu #menu-nav li a:hover {
 		color :#ffffff;
 		text-align: center;
 		padding: 0 25%;
+
 
 	}
 
@@ -1023,11 +1026,7 @@ nav#menu #menu-nav li a:hover {
     color: black;
 }
 
-.illust{
-	display: block;
-	width: 100%;
-	height: auto;
-}
+
 
 .intro-fix{
 	padding: 0px;
@@ -1050,6 +1049,7 @@ nav#menu #menu-nav li a:hover {
 	.intro-fix-service{
 		background : url("../img/backgrounds/service.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
 		background-size: cover;
+		
 	}
 
 	.intro-fix h1{
@@ -1075,10 +1075,58 @@ nav#menu #menu-nav li a:hover {
 		}
 
 
+	/*AGENCE*/
+
+	.page-illust{
+		background: url('../img/backgrounds/standards.jpg') no-repeat;
+		background-size: cover;
+		background-position: center 0px;
+		height: 350px;
+	    
+	}
+
+
+	.our-quality h3{
+		font-family: 'bree_serifregular';
+		font-size: 1.2em;
+		color: #ffffff;
+    	line-height: 1.5em;
+    	text-align: center;
+
+	}
+
+	.quality-img{
+		display: block;
+		width:115px;
+		height: 100px;
+		background: url('../img/rocst-quality-ico.png') no-repeat;
+		overflow: hidden;
+		text-indent: 99999px;
+		margin: 0 auto;
+	}
+		.first-img{
+			background-position: 0px 0px;
+		}
+
+		.second-img{
+			background-position: -115px 0px;
+		}
+
+		.third-img{
+			background-position: -230px 0px;
+		}
+
+		.fourth-img{
+			background-position: -345px 0px;
+		}
+
+
+
 	/*SERVICES*/
 	.z-index-999{
 		z-index : 999;
 	}
+
 	.service-column{
 		position: relative; 
 	}
