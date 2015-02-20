@@ -58,6 +58,10 @@
 <link rel="apple-touch-icon" sizes="72x72" href="#">
 <link rel="apple-touch-icon" sizes="144x144" href="#">
 
+
+<!-- Rocst -->
+<link rel="stylesheet" href="_include/css/rocst.css"/>
+
 <!-- Modernizr -->
 <script src="_include/js/modernizr.js"></script>
 
@@ -111,7 +115,7 @@
     <div id="slider-home">  
 
         <div class="control-nav-rocst">        
-            <a id="nextsection" href="#about" class="for-next-step">
+            <a id="nextsection" href="#about" class="for-next-step"> <!-- id = 'nextsection' -->
                 <!-- <i class="font-icon-arrow-simple-down"></i> -->
                 <span class="font-icon-arrow-light-round-down for-next-step-arrow-down"></span>
             </a>
@@ -130,10 +134,10 @@
         
         <nav id="menu">
             <ul id="menu-nav">
-                <li><a href="#home-slider">Accueil</a></li>
+                <li class="current"><a href="#home-slider">Accueil</a></li>
                 <li><a href="#work">Réalisations</a></li>
                 <li><a href="services.html"class="external">Services</a></li>
-                <li class="current"><a href="agence.html"class="external">L'agence</a></li>
+                <li><a href="agence.html"class="external">L'agence</a></li>
                 <li><a href="#contact">Contacts</a></li>
                 <!-- <li><a href="shortcodes.html" class="external">Shortcodes</a></li> -->
             </ul>
@@ -169,7 +173,7 @@
 
 
                 <p>
-                    <a class="button button-mini" href="agence.html">Rencontrez nous</a>
+                    <a class="button button-mini border-radius-100" href="agence.html">Rencontrez nous</a>
                 </p>
                 
             </div>
@@ -198,7 +202,7 @@
 
 
 <!-- Service Overview -->
-<div id="services" class="page-alternate">
+<div id="services" class="page">
     <div class="container">
         <!-- Title Page -->
         <div class="row">
@@ -272,7 +276,7 @@
 <!-- End Service Overview -->
 
 <!-- Our Work Section -->
-<div id="work" class="page">
+<div id="work" class="page-alternate">
 	<div class="container">
     	<!-- Title Page -->
         <div class="row">
@@ -292,10 +296,11 @@
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
                     	<li class="type-work">Catégories</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">Tous les projets</a></li>
-                        <li><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li><a href="#filter" data-option-value=".video">Projet Web</a></li>
-                        <li><a href="#filter" data-option-value=".photography">Photography</a></li>
+                        <li><a href="#filter" data-option-value="*" class="selected">Toutes nos réalisations</a></li>
+                        <li><a href="#filter" data-option-value=".application">Application web</a></li>
+                        <li><a href="#filter" data-option-value=".website">Site web</a></li>
+                        <li><a href="#filter" data-option-value=".graphbrand">Identité visuelle & Branding</a></li>
+                        
                         <!-- <li><a href="#filter" data-option-value=".video">Video</a></li> -->
                     </ul>
                 </nav>
@@ -308,21 +313,21 @@
                     	<ul id="thumbs">
                         
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
+                        	<li class="item-thumbs span3 application">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="_include/img/work/full/image-01-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Universkool" href="_include/img/work/full/image-01-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="_include/img/work/thumbs/image-01.jpg" alt="Application web dédié au écoles, grande écoles, univertisté pour une gestion efficiente de leur structure. En savoir plus sur <a href='http://www.universkool.com'>Universkool.com</a>">
                             </li>
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
+                        	<li class="item-thumbs span3 graphbrand">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="_include/img/work/full/image-02-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="BV Consult - Identité visuelle" href="_include/img/work/full/image-02-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -334,7 +339,7 @@
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 photography">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="_include/img/work/full/image-03-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Miel des Savanes" href="_include/img/work/full/image-03-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -343,22 +348,11 @@
                             </li>
                         	<!-- End Item Project -->
                             
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 video">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/51460511">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-08.jpg" alt="Video">
-                            </li>
-                        	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
+                        	<li class="item-thumbs span3 graphbrand">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="_include/img/work/full/image-04-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="LOGIXPERTZ Inter" href="_include/img/work/full/image-04-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -370,7 +364,7 @@
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 photography">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="_include/img/work/full/image-05-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Phoenix & Associates" href="_include/img/work/full/image-05-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -379,14 +373,14 @@
                             </li>
                         	<!-- End Item Project -->
                             
-							<!-- Item Project and Filter Name -->
+							<!-- Item Project and Filter Name 
                         	<li class="item-thumbs span3 video">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video 
                             	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/50834315">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
+                                <!-- Thumb Image and Description 
                                 <img src="_include/img/work/thumbs/image-09.jpg" alt="Video">
                             </li>
                         	<!-- End Item Project -->
@@ -403,17 +397,18 @@
                             </li>
                         	<!-- End Item Project -->
                             
-							<!-- Item Project and Filter Name -->
+							<!-- Item Project and Filter Name 
                         	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image 
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-07-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
+                                <!-- Thumb Image and Description 
                                 <img src="_include/img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
+
                         </ul>
                     </section>
                     
@@ -449,7 +444,7 @@
             		<input id="contact_name" type="text" placeholder="Nom &amp; Prénoms" value="" name="name" />
                 </p>
                 <p class="contact-email">
-                	<input id="contact_email" type="text" placeholder="Addresse Email" value="" name="email" />
+                	<input id="contact_email" type="text" placeholder="E-mail" value="" name="email" />
                 </p>
                 <p class="contact-message">
                 	<textarea id="contact_message" placeholder="Votre Message" name="message" rows="15" cols="40"></textarea>
@@ -474,9 +469,7 @@
                     <li>
                         Rocst Interactive
                         <br>
-                        Abidjan, Adjamé Golf
-                        <br>
-                        Unknow
+                        Abidjan, Côte d'Ivoire
                     </li>
                 </ul>
             </div>

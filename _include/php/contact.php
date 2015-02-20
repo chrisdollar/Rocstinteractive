@@ -3,12 +3,12 @@
 * Contact Form Class
 */
 
-
+echo 'Putain de contact';
 header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = 'your@yourdomain.com'; // Your Email
+$admin_email = 'info@rocstinteractive.com'; // Your Email
 $message_min_length = 5; // Min Message Length
 
 
@@ -17,7 +17,7 @@ class Contact_Form{
 		
 		$this->name = stripslashes($details['name']);
 		$this->email = trim($details['email']);
-		$this->subject = 'Contact from Your Website'; // Subject 
+		$this->subject = 'Contact from Our website'; // Subject 
 		$this->message = stripslashes($details['message']);
 	
 		$this->email_admin = $email_admin;

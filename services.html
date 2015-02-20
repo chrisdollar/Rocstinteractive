@@ -96,11 +96,11 @@
         
         <nav id="menu">
             <ul id="menu-nav">
-                <li><a href="index.html#home-slider">Accueil</a></li>
-                <li><a href="index.html#work">Réalisations</a></li>
+                <li><a href="index.html#home-slider" class="external">Accueil</a></li>
+                <li><a href="index.html#work" class="external">Réalisations</a></li>
                 <li class="current"><a href="services.html"class="external">Services</a></li>
-                <li><a href="agence.html"class="external">L'agence</a></li>
-                <li><a href="index.html#contact">Contacts</a></li>
+                <li><a href="agence.html" class="external">L'agence</a></li>
+                <li><a href="index.html#contact" class="external">Contacts</a></li>
                 <!-- <li><a href="shortcodes.html" class="external">Shortcodes</a></li> -->
             </ul>
         </nav>
@@ -113,7 +113,7 @@
 <div id="intro" class="page-alternate intro-fix intro-fix-service">
     <div class="introBloc">
         <h1>
-           <span> DES APPLICATIONS DEDIEES AUX ENTREPRISES ET MARQUES QUI SE SOUCIENT DE L'EXPERIENCE CLIENT.</span> 
+           <span> DES APPLICATIONS DéDIéES AUX ENTREPRISES ET AUX MARQUES QUI SE SOUCIENT DE L'EXPéRIENCE CLIENT.</span> 
            Nous développons des solutions d'entreprises permettant d'atteindre vos objectifs.
         </h1>
     </div>
@@ -128,7 +128,7 @@
         <!-- Title Page -->
         <div class="row">
             <div class="span12">
-                <div class="title-page">
+                <div id="our-offers" class="title-page">
                     <h2 class="title">Nos Offres.</h2>
                     <h3 class="title-description">Ce qu'on sait faire le mieux</h3>
                 </div>
@@ -166,9 +166,8 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aspernatur rem possimus magnam rerum assumenda veritatis ea fuga quidem aperiam, reiciendis corrupti nostrum ad quod ipsum officia provident eveniet cumque!
                 </div>
                 <ul>
-                    <ol>Expérience utilisateur</ol>
+                    <ol>UX Design</ol>
                     <ol>Design d'application</ol>
-                    <ol>sub service 3</ol>
                 </ul>
 
             </div>
@@ -189,8 +188,7 @@
                     <ol>Application d'Entreprise</ol>
                     <ol>Web Applications</ol>
                     <ol>Application Mobile natives</ol>
-                    <ol>Application Mobile Web</ol>
-                    <ol>sub service 5</ol>
+                    <ol>Application Mobile web</ol>
                 </ul>
 
                 <h3 class="profile-name">
@@ -270,7 +268,7 @@
     <div class="container">
         <div class="row">
             <div class="span12">
-                <div class="title-page">
+                <div id="process-title" class="title-page">
                     <h2 class="title">On sait comment vous satisfaire.</h2>
                     <h3 class="title-description">
                        Grâce à une réelle compréhension de nos clients, <br>nous élaborons des stratégies digitales qui ont un puissant impact dans leur business. <br>
@@ -287,8 +285,8 @@
             <section class="process-step discover-process-step">
                 <div class="centered">
                     <div class="content">
-                        <img src="_include/img/discover-picto.png" alt="">
-                        <h1>Découvrir</h1>
+                        <img id="process-icon-discover" class="process-icon" src="_include/img/discover-picto.png" alt="">
+                        <h1>Découverte</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                             <br>
@@ -302,8 +300,8 @@
             <section class="process-step define-process-step">
                 <div class="centered">
                     <div class="content">
-                        <img src="_include/img/define-picto.png" alt="">
-                        <h1>Définir</h1>
+                        <img id="process-icon-define" class="process-icon" src="_include/img/define-picto.png" alt="">
+                        <h1>Définition</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                             <br>
@@ -317,7 +315,7 @@
             <section class="process-step design-process-step">
                 <div class="centered">
                     <div class="content">
-                        <img src="_include/img/design-picto.png" alt="">
+                        <img id="process-icon-design" class="process-icon" src="_include/img/design-picto.png" alt="">
                         <h1>Design</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -332,13 +330,16 @@
             <section class="process-step development-process-step">
                 <div class="centered">
                     <div class="content">
-                        <img src="_include/img/development-picto.png" alt="">
+                        <img id="process-icon-development" class="process-icon" src="_include/img/development-picto.png" alt="">
                         <h1>Développement</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            <br>
-                            Officiis obcaecati nisi cumque id ratione voluptate consectetur accusantium,<br/>  quostemporibus doloribus deserunt, iusto laborum similique voluptatum, <br/>
-                            facilis reprehenderit eum labore perspiciatis!
+                            Nous utilisons une méthode de développement agile itérative qui tient <br> 
+                            compte de la flexibilité et la transparence dans le processus de développement. <br>
+                            Nous concevons d'abord un produit exploitable qu'on fera évoluer de façon stratégique<br>
+                            pour assurer des expériences à valeur ajouté.
+                            <!--
+                            Nous développons un produit exploitable et l'ajustons partout dans la phase se Développant pour supporter(soutenir) le développement en cours(suivi) de la stratégie et soulignons la sortie d'expériences à valeur ajoutée.
+                            -->
                         </p>
                     </div>
                 </div>
@@ -347,13 +348,15 @@
             <section class="process-step deployment-process-step no-timeline-bottom">
                 <div class="centered">
                     <div class="content">
-                        <img src="_include/img/deployment-picto.png" alt="">
-                        <h1>Deployement</h1>
+                        <img id="process-icon-deployment" class="process-icon" src="_include/img/deployment-picto.png" alt="">
+                        <h1>Déployement</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+
+                            Construite, testée et basée sur des spécifications,<br>
+                            votre solution est prête pour le déploiement.
                             <br>
-                            Officiis obcaecati nisi cumque id ratione voluptate consectetur accusantium,<br/>  quostemporibus doloribus deserunt, iusto laborum similique voluptatum, <br/>
-                            facilis reprehenderit eum labore perspiciatis!
+                            Nous éffectuons toutes les activités de sortie de production, <br>
+                            y compris la validation et le transfert de connaissance.<br>Nous assurons un déploiement réussi.
                         </p>
                     </div>
                 </div>
@@ -369,14 +372,14 @@
 
 
 <!-- Contact Section -->
-<div id="contact" class="page">
+<div class="page">
 <div class="container">
     <!-- Title Page -->
     <div class="row">
         <div class="span12">
-            <div class="title-page">
+            <div class="title-page" style="margin-bottom: 0px;">
                 <h2 class="title">Êtes-vous prêts à collaborer avec nous ? </h2>
-                <h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you. <a href="index.html#contact">Contactez-nous</a></h3>
+                <h3 class="title-description">D'attaque pour de nouveaux projets. Nous attendons avec impatience de vous servir. <a href="index.html#contact">Contactez-nous</a></h3>
 
             </div>
         </div>

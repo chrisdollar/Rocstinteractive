@@ -469,7 +469,7 @@ h3.spec {
 
 #home-slider #nextsection:hover {
 	/*background-color:#DE5E60;*/
-	background-color: #F99D29;
+	/*background-color: #F99D29;*/
 }
 
 #home-slider #nextsection i {
@@ -925,6 +925,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 
+
 #slider-home{
 	position: relative;
 	height: 100%;
@@ -978,6 +979,12 @@ nav#menu #menu-nav li a:hover {
 
 
 	}
+
+#slider-home #nextsection{
+	float: none;
+	margin: 0 auto;
+	background: none;
+}
 
 .for-next-step{
 	display: block;
@@ -1089,6 +1096,7 @@ nav#menu #menu-nav li a:hover {
 	.our-quality h3{
 		font-family: 'bree_serifregular';
 		font-size: 1.2em;
+		font-weight: 100;
 		color: #ffffff;
     	line-height: 1.5em;
     	text-align: center;
@@ -1225,7 +1233,7 @@ nav#menu #menu-nav li a:hover {
 		opacity: 0;
 	}
 
-	#process-steps{
+	#process-steps, .process-icon{
 		position: relative;
 	}
 
@@ -1245,11 +1253,13 @@ nav#menu #menu-nav li a:hover {
 	}
 
 		section.process-step h1{
+			position: relative;
 			font-family: 'open_sanslight';
 			font-size: 1.8em;
 			color: #00adef;
 		}
 		section.process-step p{
+			position: relative;
 			font-family: 'open_sanslight';
 			color: white;
 			font-size: 17px;
