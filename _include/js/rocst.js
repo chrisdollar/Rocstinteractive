@@ -213,7 +213,7 @@ $(document).ready(function(){
                 discover_process.reverse();
             }
         },
-        offset : '52%'
+        offset : '50%'
 
     });
 
@@ -226,7 +226,7 @@ $(document).ready(function(){
                 define_process.reverse();
             }
         },
-        offset : '52%'
+        offset : '50%'
 
     });
 
@@ -239,7 +239,7 @@ $(document).ready(function(){
                 design_process.reverse();
             }
         },
-        offset : '52%'
+        offset : '50%'
 
     });
 
@@ -252,7 +252,7 @@ $(document).ready(function(){
                 development_process.reverse();
             }
         },
-        offset : '52%'
+        offset : '50%'
 
     });
 
@@ -265,7 +265,7 @@ $(document).ready(function(){
                 deployment_process.reverse(0.1);
             }
         },
-        offset : '52%'
+        offset : '50%'
 
     });
 
